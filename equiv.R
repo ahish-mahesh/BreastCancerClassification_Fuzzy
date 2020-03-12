@@ -1,4 +1,6 @@
-data=read.csv("iris.csv")
+library(caret)
+
+data=iris
 #use if needed
 normalize <- function(x,new_min,new_max) {
   return (((x - min(x)) / (max(x) - min(x)))*(new_max-new_min)+new_min)
